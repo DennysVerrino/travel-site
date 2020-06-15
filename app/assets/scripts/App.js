@@ -2,7 +2,8 @@ import '../styles/styles.css';
 import MobileMenu from "./modules/MobileMenu.js";
 import RevealOnScroll from "./modules/RevealOnScroll.js";
 
-let revealOnScroll = new RevealOnScroll();
+let revealOnScroll = new RevealOnScroll(document.querySelectorAll(".feature-item"), 75);
+let revealOnScroll2 = new RevealOnScroll(document.querySelectorAll(".testimonial"), 60);
 
 let mobileMenu = new MobileMenu();
 
